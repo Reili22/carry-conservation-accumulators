@@ -1,0 +1,6 @@
+uniform          S=2: rounding   5.25000  threshold   5.25000  best found   5.25000  gain vs threshold +0.00%
+uniform          S=4: rounding   1.25000  threshold   1.25000  best found   1.25000  gain vs threshold +0.00%
+unsigned product S=2: rounding   4.68750  threshold   4.68750  best found   4.68750  gain vs threshold +0.00%
+unsigned product S=4: rounding   1.00000  threshold   1.00000  best found   1.00000  gain vs threshold +0.00%
+signed product   S=2: rounding   4.71988  threshold   4.71196  best found   4.71196  gain vs threshold +0.00%
+signed product   S=4: rounding   1.00588  threshold   1.00588  best found   1.00588  gain vs threshold +0.00%

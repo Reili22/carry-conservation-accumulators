@@ -1,0 +1,86 @@
+{
+  "exact": {
+    "ci90": [
+      0.0,
+      0.0
+    ],
+    "equivalent_half_point": true
+  },
+  "round_6": {
+    "ci90": [
+      -0.0009159322511796601,
+      0.00171593225117966
+    ],
+    "equivalent_half_point": true
+  },
+  "round_7": {
+    "ci90": [
+      -0.002801438689605239,
+      0.0006014386896052392
+    ],
+    "equivalent_half_point": true
+  },
+  "round_8": {
+    "ci90": [
+      -0.007838216709886592,
+      -0.002961783290113407
+    ],
+    "equivalent_half_point": false
+  },
+  "trunc_6": {
+    "ci90": [
+      -0.006261120932431077,
+      -0.0013388790675689225
+    ],
+    "equivalent_half_point": false
+  },
+  "trunc_7": {
+    "ci90": [
+      -0.02316260101936964,
+      -0.015237398980630357
+    ],
+    "equivalent_half_point": false
+  },
+  "evo_add8u_0E2": {
+    "ci90": [
+      -0.002877395886395877,
+      0.0004773958863958771
+    ],
+    "equivalent_half_point": true
+  },
+  "evo_add8u_6QU": {
+    "ci90": [
+      -0.0017861390682184712,
+      0.0005861390682184712
+    ],
+    "equivalent_half_point": true
+  },
+  "evo_add8u_2LL": {
+    "ci90": [
+      -0.0006403279873073765,
+      0.0014403279873073764
+    ],
+    "equivalent_half_point": true
+  },
+  "loa_5": {
+    "ci90": [
+      -0.0007272502720945251,
+      0.001327250272094525
+    ],
+    "equivalent_half_point": true
+  },
+  "trunc_4": {
+    "ci90": [
+      -0.0014975212259029608,
+      0.0008975212259029609
+    ],
+    "equivalent_half_point": true
+  },
+  "round_5": {
+    "ci90": [
+      -0.0013786452998730556,
+      0.0007786452998730558
+    ],
+    "equivalent_half_point": true
+  }
+}

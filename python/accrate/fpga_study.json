@@ -1,0 +1,1242 @@
+[
+ {
+  "design": "ama2_2",
+  "wns": 0.606,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 717.3601147776183
+ },
+ {
+  "design": "ama2_3",
+  "wns": 0.628,
+  "lut": 24,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 728.862973760933
+ },
+ {
+  "design": "ama2_4",
+  "wns": 0.597,
+  "lut": 24,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 712.7583749109052
+ },
+ {
+  "design": "ama2_5",
+  "wns": 0.425,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 634.9206349206349
+ },
+ {
+  "design": "ama2_6",
+  "wns": 0.457,
+  "lut": 24,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 648.0881399870383
+ },
+ {
+  "design": "ama2_7",
+  "wns": 0.578,
+  "lut": 24,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 703.2348804500702
+ },
+ {
+  "design": "ama2_8",
+  "wns": 0.395,
+  "lut": 24,
+  "ff": 24,
+  "carry8": 2,
+  "fmax_mhz": 623.0529595015577
+ },
+ {
+  "design": "ama5_2",
+  "wns": 0.966,
+  "lut": 22,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 967.1179883945841
+ },
+ {
+  "design": "ama5_3",
+  "wns": 1.01,
+  "lut": 21,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1010.1010101010102
+ },
+ {
+  "design": "ama5_4",
+  "wns": 1.011,
+  "lut": 20,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1011.1223458038421
+ },
+ {
+  "design": "ama5_5",
+  "wns": 1.02,
+  "lut": 19,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1020.4081632653061
+ },
+ {
+  "design": "ama5_6",
+  "wns": 1.02,
+  "lut": 18,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1020.4081632653061
+ },
+ {
+  "design": "ama5_7",
+  "wns": 1.05,
+  "lut": 17,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1052.6315789473686
+ },
+ {
+  "design": "ama5_8",
+  "wns": 1.051,
+  "lut": 16,
+  "ff": 24,
+  "carry8": 2,
+  "fmax_mhz": 1053.740779768177
+ },
+ {
+  "design": "eta1_2",
+  "wns": 1.034,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "eta1_3",
+  "wns": 1.078,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1084.598698481562
+ },
+ {
+  "design": "eta1_4",
+  "wns": 1.079,
+  "lut": 24,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1085.7763300760043
+ },
+ {
+  "design": "eta1_5",
+  "wns": 0.967,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 968.0542110358181
+ },
+ {
+  "design": "eta1_6",
+  "wns": 1.088,
+  "lut": 24,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1096.4912280701756
+ },
+ {
+  "design": "eta1_7",
+  "wns": 1.021,
+  "lut": 25,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1021.4504596527067
+ },
+ {
+  "design": "eta1_8",
+  "wns": 0.941,
+  "lut": 26,
+  "ff": 24,
+  "carry8": 2,
+  "fmax_mhz": 944.2870632672331
+ },
+ {
+  "design": "evo_add12u_0AZ",
+  "wns": 0.622,
+  "lut": 17,
+  "ff": 20,
+  "carry8": 2,
+  "fmax_mhz": 725.6894049346879
+ },
+ {
+  "design": "evo_add12u_0C9",
+  "wns": 1.01,
+  "lut": 21,
+  "ff": 22,
+  "carry8": 3,
+  "fmax_mhz": 1010.1010101010102
+ },
+ {
+  "design": "evo_add12u_0JK",
+  "wns": 0.965,
+  "lut": 19,
+  "ff": 21,
+  "carry8": 3,
+  "fmax_mhz": 966.183574879227
+ },
+ {
+  "design": "evo_add12u_0LN",
+  "wns": 0.967,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 968.0542110358181
+ },
+ {
+  "design": "evo_add12u_0UZ",
+  "wns": 0.961,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 962.4639076034647
+ },
+ {
+  "design": "evo_add12u_0Z5",
+  "wns": 0.996,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 996.01593625498
+ },
+ {
+  "design": "evo_add12u_0ZP",
+  "wns": 0.971,
+  "lut": 22,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 971.8172983479107
+ },
+ {
+  "design": "evo_add12u_103",
+  "wns": 1.088,
+  "lut": 22,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1096.4912280701756
+ },
+ {
+  "design": "evo_add12u_187",
+  "wns": 1.088,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1096.4912280701756
+ },
+ {
+  "design": "evo_add12u_22J",
+  "wns": 0.965,
+  "lut": 18,
+  "ff": 21,
+  "carry8": 3,
+  "fmax_mhz": 966.183574879227
+ },
+ {
+  "design": "evo_add12u_2KC",
+  "wns": 0.956,
+  "lut": 20,
+  "ff": 22,
+  "carry8": 3,
+  "fmax_mhz": 957.8544061302682
+ },
+ {
+  "design": "evo_add12u_2UH",
+  "wns": 0.995,
+  "lut": 17,
+  "ff": 21,
+  "carry8": 3,
+  "fmax_mhz": 995.0248756218906
+ },
+ {
+  "design": "evo_add12u_39N",
+  "wns": 1.034,
+  "lut": 22,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "evo_add12u_4NT",
+  "wns": 0.921,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 926.7840593141798
+ },
+ {
+  "design": "evo_add12u_4TF",
+  "wns": 1.034,
+  "lut": 22,
+  "ff": 22,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "evo_add12u_50U",
+  "wns": 0.962,
+  "lut": 21,
+  "ff": 23,
+  "carry8": 3,
+  "fmax_mhz": 963.3911368015414
+ },
+ {
+  "design": "evo_add16u_0GN",
+  "wns": 1.078,
+  "lut": 20,
+  "ff": 23,
+  "carry8": 3,
+  "fmax_mhz": 1084.598698481562
+ },
+ {
+  "design": "evo_add16u_0NL",
+  "wns": 1.01,
+  "lut": 21,
+  "ff": 23,
+  "carry8": 3,
+  "fmax_mhz": 1010.1010101010102
+ },
+ {
+  "design": "evo_add16u_0RH",
+  "wns": 0.958,
+  "lut": 17,
+  "ff": 22,
+  "carry8": 3,
+  "fmax_mhz": 959.6928982725527
+ },
+ {
+  "design": "evo_add16u_0RJ",
+  "wns": 0.958,
+  "lut": 17,
+  "ff": 23,
+  "carry8": 3,
+  "fmax_mhz": 959.6928982725527
+ },
+ {
+  "design": "evo_add16u_0TA",
+  "wns": 1.053,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1055.9662090813092
+ },
+ {
+  "design": "evo_add16u_0U8",
+  "wns": 1.088,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1096.4912280701756
+ },
+ {
+  "design": "evo_add16u_15Q",
+  "wns": 0.958,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 959.6928982725527
+ },
+ {
+  "design": "evo_add16u_162",
+  "wns": 1.034,
+  "lut": 22,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "evo_add8u_00M",
+  "wns": 0.642,
+  "lut": 18,
+  "ff": 22,
+  "carry8": 2,
+  "fmax_mhz": 736.3770250368188
+ },
+ {
+  "design": "evo_add8u_02Y",
+  "wns": 0.995,
+  "lut": 17,
+  "ff": 19,
+  "carry8": 2,
+  "fmax_mhz": 995.0248756218906
+ },
+ {
+  "design": "evo_add8u_05G",
+  "wns": 1.034,
+  "lut": 21,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "evo_add8u_0D0",
+  "wns": 0.981,
+  "lut": 16,
+  "ff": 22,
+  "carry8": 2,
+  "fmax_mhz": 981.3542688910695
+ },
+ {
+  "design": "evo_add8u_0E2",
+  "wns": 0.995,
+  "lut": 17,
+  "ff": 18,
+  "carry8": 3,
+  "fmax_mhz": 995.0248756218906
+ },
+ {
+  "design": "evo_add8u_0JM",
+  "wns": 1.118,
+  "lut": 16,
+  "ff": 21,
+  "carry8": 3,
+  "fmax_mhz": 1133.7868480725624
+ },
+ {
+  "design": "evo_add8u_0NH",
+  "wns": 1.078,
+  "lut": 22,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1084.598698481562
+ },
+ {
+  "design": "evo_add8u_0NQ",
+  "wns": 1.066,
+  "lut": 22,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1070.6638115631692
+ },
+ {
+  "design": "evo_add8u_0NS",
+  "wns": 0.971,
+  "lut": 22,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 971.8172983479107
+ },
+ {
+  "design": "evo_add8u_0PA",
+  "wns": 1.083,
+  "lut": 21,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1090.5125408942201
+ },
+ {
+  "design": "evo_add8u_0PL",
+  "wns": 1.001,
+  "lut": 20,
+  "ff": 23,
+  "carry8": 3,
+  "fmax_mhz": 1001.0010010010009
+ },
+ {
+  "design": "evo_add8u_0TP",
+  "wns": 1.083,
+  "lut": 19,
+  "ff": 20,
+  "carry8": 3,
+  "fmax_mhz": 1090.5125408942201
+ },
+ {
+  "design": "evo_add8u_0UK",
+  "wns": 1.051,
+  "lut": 16,
+  "ff": 21,
+  "carry8": 2,
+  "fmax_mhz": 1053.740779768177
+ },
+ {
+  "design": "evo_add8u_108",
+  "wns": 1.083,
+  "lut": 21,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1090.5125408942201
+ },
+ {
+  "design": "evo_add8u_1HG",
+  "wns": 0.354,
+  "lut": 25,
+  "ff": 24,
+  "carry8": 2,
+  "fmax_mhz": 607.5334143377886
+ },
+ {
+  "design": "evo_add8u_2AM",
+  "wns": 1.034,
+  "lut": 22,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "evo_add8u_2J3",
+  "wns": 1.047,
+  "lut": 19,
+  "ff": 22,
+  "carry8": 3,
+  "fmax_mhz": 1049.317943336831
+ },
+ {
+  "design": "evo_add8u_2LL",
+  "wns": 0.964,
+  "lut": 19,
+  "ff": 21,
+  "carry8": 3,
+  "fmax_mhz": 965.2509652509652
+ },
+ {
+  "design": "evo_add8u_3RE",
+  "wns": 0.65,
+  "lut": 17,
+  "ff": 23,
+  "carry8": 2,
+  "fmax_mhz": 740.7407407407406
+ },
+ {
+  "design": "evo_add8u_4M7",
+  "wns": 0.956,
+  "lut": 20,
+  "ff": 23,
+  "carry8": 3,
+  "fmax_mhz": 957.8544061302682
+ },
+ {
+  "design": "evo_add8u_6FT",
+  "wns": 1.079,
+  "lut": 19,
+  "ff": 23,
+  "carry8": 3,
+  "fmax_mhz": 1085.7763300760043
+ },
+ {
+  "design": "evo_add8u_6K6",
+  "wns": 1.078,
+  "lut": 21,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1084.598698481562
+ },
+ {
+  "design": "evo_add8u_6LG",
+  "wns": 1.078,
+  "lut": 20,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1084.598698481562
+ },
+ {
+  "design": "evo_add8u_6MZ",
+  "wns": 0.961,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 962.4639076034647
+ },
+ {
+  "design": "evo_add8u_6P8",
+  "wns": 1.034,
+  "lut": 22,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "evo_add8u_6PT",
+  "wns": 1.034,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "evo_add8u_6QU",
+  "wns": 1.079,
+  "lut": 20,
+  "ff": 23,
+  "carry8": 3,
+  "fmax_mhz": 1085.7763300760043
+ },
+ {
+  "design": "evo_add8u_6R6",
+  "wns": 0.965,
+  "lut": 20,
+  "ff": 23,
+  "carry8": 3,
+  "fmax_mhz": 966.183574879227
+ },
+ {
+  "design": "evo_add8u_6S4",
+  "wns": 0.382,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 2,
+  "fmax_mhz": 618.0469715698393
+ },
+ {
+  "design": "evo_add8u_6SM",
+  "wns": 0.555,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 692.0415224913496
+ },
+ {
+  "design": "evo_add8u_6TH",
+  "wns": 0.961,
+  "lut": 22,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 962.4639076034647
+ },
+ {
+  "design": "exact",
+  "wns": 1.012,
+  "lut": 24,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1012.1457489878543
+ },
+ {
+  "design": "loa_2",
+  "wns": 1.009,
+  "lut": 24,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1009.0817356205852
+ },
+ {
+  "design": "loa_3",
+  "wns": 1.053,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1055.9662090813092
+ },
+ {
+  "design": "loa_4",
+  "wns": 1.054,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1057.0824524312898
+ },
+ {
+  "design": "loa_5",
+  "wns": 1.063,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1067.2358591248665
+ },
+ {
+  "design": "loa_6",
+  "wns": 1.063,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1067.2358591248665
+ },
+ {
+  "design": "loa_7",
+  "wns": 1.09,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1098.901098901099
+ },
+ {
+  "design": "loa_8",
+  "wns": 1.094,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 2,
+  "fmax_mhz": 1103.7527593818986
+ },
+ {
+  "design": "loawa_2",
+  "wns": 1.034,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "loawa_3",
+  "wns": 1.078,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1084.598698481562
+ },
+ {
+  "design": "loawa_4",
+  "wns": 1.079,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1085.7763300760043
+ },
+ {
+  "design": "loawa_5",
+  "wns": 1.083,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1090.5125408942201
+ },
+ {
+  "design": "loawa_6",
+  "wns": 1.088,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1096.4912280701756
+ },
+ {
+  "design": "loawa_7",
+  "wns": 1.09,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 3,
+  "fmax_mhz": 1098.901098901099
+ },
+ {
+  "design": "loawa_8",
+  "wns": 1.119,
+  "lut": 23,
+  "ff": 24,
+  "carry8": 2,
+  "fmax_mhz": 1135.0737797956867
+ },
+ {
+  "design": "prune_eta1_2",
+  "wns": 1.034,
+  "lut": 22,
+  "ff": 22,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "prune_eta1_3",
+  "wns": 1.078,
+  "lut": 21,
+  "ff": 21,
+  "carry8": 3,
+  "fmax_mhz": 1084.598698481562
+ },
+ {
+  "design": "prune_eta1_4",
+  "wns": 1.079,
+  "lut": 20,
+  "ff": 20,
+  "carry8": 3,
+  "fmax_mhz": 1085.7763300760043
+ },
+ {
+  "design": "prune_eta1_5",
+  "wns": 1.083,
+  "lut": 19,
+  "ff": 19,
+  "carry8": 3,
+  "fmax_mhz": 1090.5125408942201
+ },
+ {
+  "design": "prune_eta1_6",
+  "wns": 1.088,
+  "lut": 18,
+  "ff": 18,
+  "carry8": 3,
+  "fmax_mhz": 1096.4912280701756
+ },
+ {
+  "design": "prune_eta1_7",
+  "wns": 1.118,
+  "lut": 17,
+  "ff": 17,
+  "carry8": 3,
+  "fmax_mhz": 1133.7868480725624
+ },
+ {
+  "design": "prune_eta1_8",
+  "wns": 1.119,
+  "lut": 16,
+  "ff": 16,
+  "carry8": 2,
+  "fmax_mhz": 1135.0737797956867
+ },
+ {
+  "design": "prune_evo_add12u_0JK",
+  "wns": 0.965,
+  "lut": 19,
+  "ff": 19,
+  "carry8": 3,
+  "fmax_mhz": 966.183574879227
+ },
+ {
+  "design": "prune_evo_add12u_103",
+  "wns": 1.088,
+  "lut": 17,
+  "ff": 18,
+  "carry8": 3,
+  "fmax_mhz": 1096.4912280701756
+ },
+ {
+  "design": "prune_evo_add12u_187",
+  "wns": 1.088,
+  "lut": 17,
+  "ff": 18,
+  "carry8": 3,
+  "fmax_mhz": 1096.4912280701756
+ },
+ {
+  "design": "prune_evo_add12u_22J",
+  "wns": 0.965,
+  "lut": 18,
+  "ff": 18,
+  "carry8": 3,
+  "fmax_mhz": 966.183574879227
+ },
+ {
+  "design": "prune_evo_add12u_2KC",
+  "wns": 0.956,
+  "lut": 20,
+  "ff": 20,
+  "carry8": 3,
+  "fmax_mhz": 957.8544061302682
+ },
+ {
+  "design": "prune_evo_add12u_2UH",
+  "wns": 0.995,
+  "lut": 17,
+  "ff": 17,
+  "carry8": 3,
+  "fmax_mhz": 995.0248756218906
+ },
+ {
+  "design": "prune_evo_add12u_39N",
+  "wns": 1.034,
+  "lut": 22,
+  "ff": 23,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "prune_evo_add12u_4TF",
+  "wns": 1.034,
+  "lut": 22,
+  "ff": 22,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "prune_evo_add16u_0GN",
+  "wns": 1.078,
+  "lut": 20,
+  "ff": 21,
+  "carry8": 3,
+  "fmax_mhz": 1084.598698481562
+ },
+ {
+  "design": "prune_evo_add16u_0U8",
+  "wns": 1.088,
+  "lut": 17,
+  "ff": 18,
+  "carry8": 3,
+  "fmax_mhz": 1096.4912280701756
+ },
+ {
+  "design": "prune_evo_add16u_162",
+  "wns": 1.034,
+  "lut": 21,
+  "ff": 22,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "prune_evo_add8u_05G",
+  "wns": 1.034,
+  "lut": 21,
+  "ff": 22,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "prune_evo_add8u_0E2",
+  "wns": 0.995,
+  "lut": 17,
+  "ff": 17,
+  "carry8": 3,
+  "fmax_mhz": 995.0248756218906
+ },
+ {
+  "design": "prune_evo_add8u_0JM",
+  "wns": 1.09,
+  "lut": 16,
+  "ff": 17,
+  "carry8": 3,
+  "fmax_mhz": 1098.901098901099
+ },
+ {
+  "design": "prune_evo_add8u_0NH",
+  "wns": 1.078,
+  "lut": 20,
+  "ff": 21,
+  "carry8": 3,
+  "fmax_mhz": 1084.598698481562
+ },
+ {
+  "design": "prune_evo_add8u_0PA",
+  "wns": 1.083,
+  "lut": 18,
+  "ff": 19,
+  "carry8": 3,
+  "fmax_mhz": 1090.5125408942201
+ },
+ {
+  "design": "prune_evo_add8u_0TP",
+  "wns": 1.083,
+  "lut": 19,
+  "ff": 19,
+  "carry8": 3,
+  "fmax_mhz": 1090.5125408942201
+ },
+ {
+  "design": "prune_evo_add8u_108",
+  "wns": 1.083,
+  "lut": 18,
+  "ff": 19,
+  "carry8": 3,
+  "fmax_mhz": 1090.5125408942201
+ },
+ {
+  "design": "prune_evo_add8u_2AM",
+  "wns": 1.034,
+  "lut": 22,
+  "ff": 23,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "prune_evo_add8u_6FT",
+  "wns": 1.079,
+  "lut": 19,
+  "ff": 20,
+  "carry8": 3,
+  "fmax_mhz": 1085.7763300760043
+ },
+ {
+  "design": "prune_evo_add8u_6K6",
+  "wns": 1.078,
+  "lut": 20,
+  "ff": 21,
+  "carry8": 3,
+  "fmax_mhz": 1084.598698481562
+ },
+ {
+  "design": "prune_evo_add8u_6LG",
+  "wns": 1.078,
+  "lut": 20,
+  "ff": 21,
+  "carry8": 3,
+  "fmax_mhz": 1084.598698481562
+ },
+ {
+  "design": "prune_evo_add8u_6P8",
+  "wns": 1.034,
+  "lut": 21,
+  "ff": 22,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "prune_evo_add8u_6PT",
+  "wns": 1.034,
+  "lut": 22,
+  "ff": 23,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "prune_evo_add8u_6QU",
+  "wns": 1.079,
+  "lut": 19,
+  "ff": 20,
+  "carry8": 3,
+  "fmax_mhz": 1085.7763300760043
+ },
+ {
+  "design": "prune_evo_add8u_6R6",
+  "wns": 0.965,
+  "lut": 19,
+  "ff": 19,
+  "carry8": 3,
+  "fmax_mhz": 966.183574879227
+ },
+ {
+  "design": "prune_loawa_2",
+  "wns": 1.034,
+  "lut": 22,
+  "ff": 22,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "prune_loawa_3",
+  "wns": 1.078,
+  "lut": 21,
+  "ff": 21,
+  "carry8": 3,
+  "fmax_mhz": 1084.598698481562
+ },
+ {
+  "design": "prune_loawa_4",
+  "wns": 1.079,
+  "lut": 20,
+  "ff": 20,
+  "carry8": 3,
+  "fmax_mhz": 1085.7763300760043
+ },
+ {
+  "design": "prune_loawa_5",
+  "wns": 1.083,
+  "lut": 19,
+  "ff": 19,
+  "carry8": 3,
+  "fmax_mhz": 1090.5125408942201
+ },
+ {
+  "design": "prune_loawa_6",
+  "wns": 1.088,
+  "lut": 18,
+  "ff": 18,
+  "carry8": 3,
+  "fmax_mhz": 1096.4912280701756
+ },
+ {
+  "design": "prune_loawa_7",
+  "wns": 1.118,
+  "lut": 17,
+  "ff": 17,
+  "carry8": 3,
+  "fmax_mhz": 1133.7868480725624
+ },
+ {
+  "design": "prune_loawa_8",
+  "wns": 1.119,
+  "lut": 16,
+  "ff": 16,
+  "carry8": 2,
+  "fmax_mhz": 1135.0737797956867
+ },
+ {
+  "design": "round_1",
+  "wns": 0.911,
+  "lut": 23,
+  "ff": 23,
+  "carry8": 3,
+  "fmax_mhz": 918.2736455463728
+ },
+ {
+  "design": "round_2",
+  "wns": 0.911,
+  "lut": 22,
+  "ff": 22,
+  "carry8": 3,
+  "fmax_mhz": 918.2736455463728
+ },
+ {
+  "design": "round_3",
+  "wns": 0.955,
+  "lut": 21,
+  "ff": 21,
+  "carry8": 3,
+  "fmax_mhz": 956.9377990430622
+ },
+ {
+  "design": "round_4",
+  "wns": 0.956,
+  "lut": 20,
+  "ff": 20,
+  "carry8": 3,
+  "fmax_mhz": 957.8544061302682
+ },
+ {
+  "design": "round_5",
+  "wns": 0.965,
+  "lut": 19,
+  "ff": 19,
+  "carry8": 3,
+  "fmax_mhz": 966.183574879227
+ },
+ {
+  "design": "round_6",
+  "wns": 0.965,
+  "lut": 18,
+  "ff": 18,
+  "carry8": 3,
+  "fmax_mhz": 966.183574879227
+ },
+ {
+  "design": "round_7",
+  "wns": 0.995,
+  "lut": 17,
+  "ff": 17,
+  "carry8": 3,
+  "fmax_mhz": 995.0248756218906
+ },
+ {
+  "design": "round_8",
+  "wns": 0.996,
+  "lut": 16,
+  "ff": 16,
+  "carry8": 2,
+  "fmax_mhz": 996.01593625498
+ },
+ {
+  "design": "tplus_1",
+  "wns": 1.034,
+  "lut": 23,
+  "ff": 23,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "tplus_2",
+  "wns": 1.034,
+  "lut": 22,
+  "ff": 22,
+  "carry8": 3,
+  "fmax_mhz": 1035.1966873706006
+ },
+ {
+  "design": "tplus_3",
+  "wns": 1.078,
+  "lut": 21,
+  "ff": 21,
+  "carry8": 3,
+  "fmax_mhz": 1084.598698481562
+ },
+ {
+  "design": "tplus_4",
+  "wns": 1.079,
+  "lut": 20,
+  "ff": 20,
+  "carry8": 3,
+  "fmax_mhz": 1085.7763300760043
+ },
+ {
+  "design": "tplus_5",
+  "wns": 1.083,
+  "lut": 19,
+  "ff": 19,
+  "carry8": 3,
+  "fmax_mhz": 1090.5125408942201
+ },
+ {
+  "design": "tplus_6",
+  "wns": 1.088,
+  "lut": 18,
+  "ff": 18,
+  "carry8": 3,
+  "fmax_mhz": 1096.4912280701756
+ },
+ {
+  "design": "tplus_7",
+  "wns": 1.118,
+  "lut": 17,
+  "ff": 17,
+  "carry8": 3,
+  "fmax_mhz": 1133.7868480725624
+ },
+ {
+  "design": "tplus_8",
+  "wns": 1.119,
+  "lut": 16,
+  "ff": 16,
+  "carry8": 2,
+  "fmax_mhz": 1135.0737797956867
+ },
+ {
+  "design": "trunc_1",
+  "wns": 1.022,
+  "lut": 23,
+  "ff": 23,
+  "carry8": 3,
+  "fmax_mhz": 1022.4948875255624
+ },
+ {
+  "design": "trunc_2",
+  "wns": 1.022,
+  "lut": 22,
+  "ff": 22,
+  "carry8": 3,
+  "fmax_mhz": 1022.4948875255624
+ },
+ {
+  "design": "trunc_3",
+  "wns": 1.066,
+  "lut": 21,
+  "ff": 21,
+  "carry8": 3,
+  "fmax_mhz": 1070.6638115631692
+ },
+ {
+  "design": "trunc_4",
+  "wns": 1.067,
+  "lut": 20,
+  "ff": 20,
+  "carry8": 3,
+  "fmax_mhz": 1071.8113612004286
+ },
+ {
+  "design": "trunc_5",
+  "wns": 1.076,
+  "lut": 19,
+  "ff": 19,
+  "carry8": 3,
+  "fmax_mhz": 1082.2510822510824
+ },
+ {
+  "design": "trunc_6",
+  "wns": 1.076,
+  "lut": 18,
+  "ff": 18,
+  "carry8": 3,
+  "fmax_mhz": 1082.2510822510824
+ },
+ {
+  "design": "trunc_7",
+  "wns": 1.106,
+  "lut": 17,
+  "ff": 17,
+  "carry8": 3,
+  "fmax_mhz": 1118.5682326621925
+ },
+ {
+  "design": "trunc_8",
+  "wns": 1.119,
+  "lut": 16,
+  "ff": 16,
+  "carry8": 2,
+  "fmax_mhz": 1135.0737797956867
+ }
+]

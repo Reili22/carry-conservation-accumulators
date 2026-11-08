@@ -1,0 +1,13 @@
+{
+ "trials": 3000,
+ "k_range": [
+  1,
+  4
+ ],
+ "violations": {
+  "var>=mult": 0,
+  "mult>=entropy": 0,
+  "entropy>=outdeg": 0
+ },
+ "min_gap_var_minus_entropy_bound": 0.0
+}

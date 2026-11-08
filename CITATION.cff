@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the accompanying article."
+title: "Carry Conservation in Approximate Accumulators: research artifact"
+type: software
+version: "1.0.5"
+date-released: "2026-11-09"
+license: MIT
+repository-code: "https://github.com/Reili22/carry-conservation-accumulators"
+authors:
+  - family-names: Li
+    given-names: Rei
+    orcid: "https://orcid.org/0009-0003-3471-5370"
+    affiliation: "New York University Tandon School of Engineering"
+  - family-names: Li
+    given-names: Xinyi
+    orcid: "https://orcid.org/0009-0002-6985-7005"
+    affiliation: "New York University Tandon School of Engineering"
+  - family-names: Li
+    given-names: Ivy
+    orcid: "https://orcid.org/0009-0002-9031-4259"
+    affiliation: "University of Rochester"
+preferred-citation:
+  type: article
+  title: "Carry Conservation in Approximate Accumulators: Quantizer Equivalence and an Entropy Bound"
+  authors:
+    - family-names: Li
+      given-names: Rei
+    - family-names: Li
+      given-names: Xinyi
+    - family-names: Li
+      given-names: Ivy
+  journal: "Integration, the VLSI Journal"
+  year: 2026

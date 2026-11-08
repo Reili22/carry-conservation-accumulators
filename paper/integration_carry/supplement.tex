@@ -1,0 +1,479 @@
+\documentclass[11pt]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,microtype}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Z}{\mathbb{Z}}
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\theequation}{S\arabic{equation}}
+\title{Supplementary material for\\``Carry Conservation in Approximate Accumulators:\\Quantizer Equivalence and an Entropy Bound''}
+\author{Rei Li, Xinyi Li, and Ivy Li}
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent Theorem, lemma, equation, section, and table numbers without an
+S prefix refer to the main paper. All reported values come from the
+study scripts in \texttt{python/accrate}.
+
+\section{Certification of the residue width}
+
+We determine the residue width $k$ of each 8-bit cell by exhausting all
+$2^{16}$ operand pairs. For 12- and 16-bit cells, a SAT miter instantiates
+two copies of the unmodified RTL. It constrains their low $k$ operand bits
+to agree and leaves the high bits free. It then asks whether the signed
+errors can differ. An unsatisfiable result proves the residue property
+for every high-bit assignment. A concrete pair at $k-1$ establishes
+that the width is minimal.
+
+The median SAT proof time was 33--48~ms. Any $w$-bit cell used as the
+low segment of a wider accumulator has the property at $k=w$.
+The certificate identifies the smallest such $k$. Among 88 nonexact
+EvoApproxLib cells, 34 have no residue width $k\le8$ and are excluded.
+All are 12- or 16-bit cells, as confirmed by the multiwidth residue-width
+certification procedure.
+
+\section{Delayed rounding in AMA5}
+
+With the accumulator state connected as its left operand, AMA5 copies
+the fresh residue into the next state, $X_i=R_i$. It emits the
+previously stored top bit as carry, $C_i=(X_{i-1})_{k-1}$.
+For comparison, the
+round-half-up twin has error $E'_n=\sum_i(q(R_i)_{k-1}-R_i)$, so Lemma~2 gives
+\begin{equation}
+E_n-E'_n=\bigl(q(X_0)_{k-1}-X_0\bigr)-\bigl(q(R_n)_{k-1}-R_n\bigr).
+\end{equation}
+Both bracketed terms lie in $(-q/2,q/2]$, which yields
+$|E_n-E'_n|<q$ for every input sequence. AMA5 implements rounding
+with a one-operation delay. Swapping operands makes the carry read the fresh
+top bit, so that orientation is state-blind and has the same twin.
+
+\section{Numerical checks of the theorems}
+
+\paragraph{Theorem 2 (law-optimal state-blind design)}
+We searched all $g\in\{-2,\ldots,2\}^q$ for 132 random residue laws
+with $q\le8$. In every case, a threshold quantizer reached the
+minimum to $10^{-15}$. Under the unsigned and signed product-residue laws,
+the best threshold
+improves diffusion over round-half-up by at most 1.5\% for every $t\le8$.
+
+\paragraph{Theorem 4 (exact moments)}
+For every design, we compared diffusion from the Poisson equation with
+$(\Var E_{8192}-\Var E_{4096})/4096$ from the moment recursion, using a
+relative tolerance of $10^{-6}$. Direct simulations of wide accumulators
+checked Lemma~2 on uniform, skewed, constant, ramp, and random-walk operand
+streams. For every trace, the difference between the two sides of the
+carry-conservation identity was zero. The gap in Theorem~1 remained
+below $q$ for all 15 state-blind 8-bit cells. This supports the
+pathwise bound under each tested input stream.
+
+The single-class condition matters because random entry into recurrent
+classes with different drifts makes variance grow quadratically.
+
+\paragraph{Theorems 5 and 6 (bounds)}
+We tested Eq.~(6) on 3000 random low-part machines with $k\le4$, at most
+$2q$ states, carries in $\{-2,\ldots,3\}$, and arbitrary state encodings.
+No inequality was violated. Rounding met all three bounds to
+$2\times10^{-16}$ for every $k\le5$ and $s\le k$.
+The 143 census design orientations also satisfied the entropy bound.
+The law-dependent bound held for 1500 random machines with random
+laws. It also held for all 226 design--law pairs under the product
+laws, with equality for 11 pairs.
+
+\paragraph{Relation to causal source coding}
+Results for causal and finite-state source codes show that memory cannot
+improve memoryless quantization of a memoryless source. Theorem~5
+measures the resource in circuit registers and bounds accumulated
+integer error rather than individual-sample distortion. It holds
+for any logic, state encoding, or carry range. At fractional $h$, only the
+first, cubic bound of Eq.~(6) can be tight (Proposition~1).
+
+\section{Census details}
+
+Operand orientation affects classification more often than diffusion.
+Swapping the inputs changes diffusion only for \texttt{add8u\_0UK} and
+\texttt{add8u\_2J3}. It changes state-blind status for 13 of 54
+library cells. The state-blind counts are 26 as wired and 27 with
+inputs swapped. In at least one orientation, 33 cells are
+state-blind. Both orientations appear in the study records.
+
+The closest cells to the entropy bound are \texttt{add8u\_6S4} and
+\texttt{add8u\_6SM}, with the former reaching 3.91 of 4.20 bits, or 93\% of the
+bound. The latter reaches 0.92 of 0.98 bits, or 94\%.
+Among state-aware library cells, the recurrent-state count exceeds $2^h$
+by a median factor of $2^{0.78}$.
+
+Compensation changes how well single-addition MSE predicts accumulated MSE
+at $n=256$. After optimal constant compensation, Kendall $\tau$ is 0.90
+for 8-bit cells, 0.97 for 12-bit cells, and 1.00 for 16-bit cells. Without
+compensation, the corresponding values are 0.54, 0.57, and 0.36. Among
+434 ordered 8-bit pairs, 99 reverse. The single-addition mean error of
+\texttt{add8u\_4M7} is
+$-0.5$, but its accumulated drift is $-3.5$ per operation. After
+compensation, its diffusion equals that of carry-cut cells
+\texttt{add8u\_6QU} and \texttt{add8u\_6FT}, despite their different
+single-addition MSEs.
+
+\section{Hardware details}
+
+\paragraph{Synthesis and mapping flow}
+We run Yosys and ABC binaries from the pinned OSS CAD Suite
+build on Windows; tool-build provenance and executable paths are recorded
+in \texttt{asic\_flow.py}. Yosys runs \texttt{synth -noabc} and
+\texttt{dffunmap}, after which standalone ABC maps the generic netlist to
+Nangate45 X1 cells. Each of three structural pre-optimizations is followed
+by six delay-relaxation settings of ABC's \texttt{\&nf} technology mapper,
+giving the area--delay points used in the comparison. We apply no retiming
+or sequential optimization, and the exact library cell
+\texttt{add8u\_1HG} serves as a synthesis control and is excluded from all
+counts.
+
+The Python netlist simulator compares each register's next state
+with the reference model on every cycle of a 4000-operation MAC trace
+cleared every 144 operations. The combinational equivalence proof matches
+registers by name, whose correspondence is fixed by construction. A
+zero-delay energy estimate is about 23\% below the unit-delay estimate,
+without changing the conclusions.
+
+Because high operand bits do not affect the signed error, an exact upper
+adder can replace the corresponding output logic of a 12- or 16-bit cell.
+The mapper can restructure either implementation;
+for 8-bit cells at $k=8$, we use the original RTL for all eight bits.
+
+\paragraph{Quantizer-twin extraction}
+The quantizer twins implement truncation, round-half-up, or truncation with
+a carry-in on each operation, the last case applying to the two designs
+with constant carry. We also matched each of the 1440 extracted netlists
+to its twin's reference model in simulation.
+
+Extraction did not increase delay or energy, and any reported area
+increase stayed within 0.01~$\mu$m$^2$ of the mapped-cell area rounding. The
+maximum area reductions were 29.4\% for unsigned and 26.0\% for signed
+designs, with medians of 8.8\% and 7.8\%, respectively. Maximum energy
+reductions were 25.7\% and 21.3\%, with medians of 7.0\% and 5.5\%.
+
+\paragraph{Error measures}
+Consecutive trace products are independent, so Theorem~4 applies exactly to
+their residue law. Finite-length MSE and diffusion give the same comparisons
+when differences below 1\% count as ties because a design and its twin differ only
+by a bounded readout term, whose relative effect is $O(1/n)$. The unsigned
+product residues are nonuniform: their least significant bit is one with
+probability $1/4$.
+
+\paragraph{Comparison per metric}
+The per-metric result persists after excluding registers for 87 of the 89
+designs. The low-part logic of \texttt{add16u\_0NL} for unsigned operands
+and \texttt{add12u\_4NT} for signed operands is slightly smaller than
+reference logic, but the additional registers outweigh this advantage.
+
+\paragraph{Joint and iso-delay comparison}
+Under uniform residues, exact references dominate all but 2 unsigned and 3
+signed mapped points, all from state-aware designs: AMA2 at
+$k=2,3$ and \texttt{add12u\_4NT}. With the product-residue law, exceptions
+increase to 6 unsigned points from 3 state-aware designs. The signed
+exceptions number 11 of 1602 points and come from 8 designs.
+
+At a common delay limit, three signed designs each have one mapped point
+below every qualifying reference in both area and energy.
+Table~\ref{tab:isodelay} gives these exceptions. Two unsigned AMA5 points
+at $k=5$ and one signed AMA2 point at $k=3$ are faster than every equally
+accurate reference.
+
+\begin{table}[t]
+\centering
+\caption{Area and energy differences for the signed designs that outperform
+all exact references meeting the same delay limit. Negative values denote
+lower cost than the corresponding reference.}
+\label{tab:isodelay}
+\begin{tabular}{lrr}
+\toprule
+Design & Area & Energy\\
+\midrule
+\texttt{add8u\_2LL} & $-6.4\%$ & $-7.3\%$\\
+\texttt{add8u\_2J3} & $-5.1\%$ & $-4.5\%$\\
+\texttt{add12u\_0C9} & $-0.9\%$ & $-0.6\%$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+In Table~\ref{tab:isodelay} order, the three designs have the same
+diffusion under the signed product-residue law as \texttt{round\_5},
+\texttt{round\_5}, and \texttt{round\_3}, respectively, to fourteen
+digits. AMA5 is pathwise equivalent to rounding.
+Truncation has higher diffusion under this asymmetric law and leaves the
+reference set. The fastest remaining \texttt{round\_5} mapping takes
+428.7~ps, compared with 411.3~ps for \texttt{add8u\_2LL}. Their
+difference of about 4\% lies within implementation scatter.
+The 18 mappings per design span the area--delay trade-off used for this
+delay-constrained comparison.
+
+\paragraph{Compensation cost}
+Clearing to a compensation constant changes each register bit's clear logic
+from forcing 0 to forcing a fixed value. Under the unsigned product-residue law, we
+used $-\mathrm{round}(\E E_{144})$ for \texttt{round\_4},
+\texttt{trunc\_4}, and \texttt{add8u\_6QU}. Their best mapped areas changed
+by $+5.9$, $0.0$, and $-6.6~\mu$m$^2$, respectively. The corresponding
+percentage changes were $+3.2\%$, $0\%$, and $-3.3\%$. These changes are
+within the mapping heuristic's observed variation.
+
+\section{Post-route and FPGA details}
+
+\paragraph{Place-and-route flow}
+We run OpenROAD-flow-scripts from the \texttt{openroad/orfs} Docker image
+with its Nangate45 platform. The flow is identical for every design: ORFS
+Yosys synthesis, floorplanning, I/O placement, timing-driven global
+placement, detailed placement, clock-tree synthesis, timing repair, global
+and detailed routing, and RC extraction. Ports are not buffered. The
+default configuration uses 50\% core utilization and ORFS's speed-oriented
+ABC script. The three other configurations use the area-oriented ABC
+script or 40\% or 65\% core utilization. Each of the 115 designs and the 40
+pruned state-blind designs is routed for both operand types at 1.5~ns and
+0.55~ns under all four configurations, for 2480 routed accumulators. The
+script is \texttt{pnr\_flow.py}, and the analysis is
+\texttt{pnr\_analysis.py}.
+
+\paragraph{Gate-level check and power}
+A Verilog model of each Nangate45 cell is generated from its Liberty
+function. Each routed netlist is simulated with Icarus Verilog on 2000
+products of uniform 8-bit operands, cleared every 144 operations, at the
+clock period of its run. Its outputs are compared at every cycle with the
+same Python reference model used at synthesis level; for a pruned design,
+the reference model is its quantizer twin. All 2480 netlists matched.
+OpenSTA annotates the resulting VCD and the routed SPEF and reports total
+power, which we convert to energy per accumulation by multiplying by the
+clock period. Because the simulation has zero delay, glitch power is
+omitted.
+
+\paragraph{Implementation scatter}
+The relative range of a design's routed area over the four
+configurations has a median of 19--21\% and reaches 47\%.
+Most of this range comes from the ABC script. The best-of-four
+comparison removes most of this scatter. The
+remaining noise is visible in designs that are pathwise within $q$ of
+rounding. Over $k=2,\ldots,8$, both operand types, and both clocks, LOA and
+AMA5 differ from \texttt{round\_$k$} by $-2.6\%$ to $+38\%$ in area. Their
+energy differs by down to $-8.4\%$, and the median difference is $+10\%$
+for area and $+9\%$ for energy.
+
+\paragraph{Pruned designs}
+For pruned state-blind RTL, the best routed area relative to the
+unpruned design has a median of $-5.4\%$ (unsigned) and $-7.8\%$
+(signed) at 1.5~ns. For a few unsigned designs, resynthesis produced
+a larger netlist, up to $+17\%$. This is a property of the synthesis
+heuristic: Corollary~1 removes cells from a given netlist, whereas the
+flow resynthesizes the pruned RTL from scratch.
+
+\paragraph{All comparisons}
+Table~\ref{tab:pnrfull} lists every post-route comparison by reference
+set, residue law, operand type, and clock. Not counting the pruned
+netlists, or using only the default configuration, lowers the medians and
+admits more designs with small negative penalties. Most are state-blind,
+so Corollary~1 gives an equally cheap twin. Without pruned references,
+three state-aware designs are cheaper in both area and energy, all at
+1.5~ns. They are \texttt{add12u\_4NT} (signed, product-residue law, $-3.5\%$ and
+$-3.9\%$), LOA with $k=2$ (unsigned, product-residue law, $-1.3\%$ and $-2.8\%$),
+and \texttt{add8u\_6SM} (unsigned, both laws, $-5.3\%$ and $-4.2\%$; $-5.6\%$
+and $-6.0\%$ with the default configuration only). The \texttt{add8u\_6SM}
+advantage disappears once pruned state-blind netlists, which compute
+the same rounding function, are counted. This indicates that ORFS
+synthesizes the plain \texttt{round\_$k$} RTL suboptimally at this point.
+For \texttt{add12u\_4NT}, the synthesis-level logic excluding registers was
+already slightly smaller than that of the reference (Section~S5).
+
+\input{pnr_tables.tex}
+
+\paragraph{FPGA}
+Vivado 2022.2 implements each signed design out of context on
+\texttt{xck26-sfvc784-2LV-c} with a 2~ns clock. The flow runs
+\texttt{synth\_design -flatten\_hierarchy full}, \texttt{opt\_design},
+\texttt{place\_design}, and \texttt{route\_design}. All 155 designs,
+including the pruned ones, met the clock. The exact accumulator uses 24
+LUTs, 24 registers, and three \texttt{CARRY8} blocks. \texttt{round\_8}
+uses 16 LUTs and 16 registers. The script is \texttt{fpga\_flow.py}, and the
+analysis is \texttt{fpga\_analysis.py}.
+
+\paragraph{MAC}
+Table~\ref{tab:mac} gives the routed area of a registered signed
+$8\times8$ MAC built around each accumulator in the CNN equivalence set.
+It uses the default configuration only.
+
+\section{CNN details}
+
+\paragraph{Setup}
+The second training seed reached 91.49\%, and activation scales were
+calibrated with 500 training images. Across the test set, the largest exact
+accumulator magnitude was 180{,}578, well within the 24-bit range. We
+measured the product-residue law for compensation on 40 calibration images,
+sampling 8 from each batch of 100.
+
+At top-1 accuracy near 92\%, the 95\% confidence half-width on 1000 images
+is 1.7 points, so we also compare designs image by image.
+
+\paragraph{Model accuracy}
+We check Theorem~4 in sample, using each layer's residue law measured on the
+test images. Across 494 layer--design pairs, the median ratio of predicted
+to measured uncompensated MSE is 0.978. The interquartile range is
+0.961--0.989, the 5--95\% range is 0.935--1.002, and the maximum is 2.0.
+Under the uniform law, the median ratio is 3.4, the 5--95\% range is
+0.52--44, and the extremes are 0.29 and 97.
+
+\paragraph{Second seed}
+Table~\ref{tab:secondseed} lists calibrated accuracy for eleven
+representative designs in the second network. Their values span
+90.7--91.3\%, compared with 91.0\% for the exact accumulator.
+Predictions from \texttt{add8u\_6QU} and \texttt{trunc\_4} agree on 99.4\%
+of images.
+\begin{table}[t]
+\centering
+\caption{Calibrated classification accuracy for the second training seed.
+The paired columns list designs from the same evaluation, but they do not
+represent paired comparisons between rows.}
+\label{tab:secondseed}
+\begin{tabular}{lr@{\qquad}lr}
+\toprule
+Design & Cal. top-1 (\%) & Design & Cal. top-1 (\%)\\
+\midrule
+exact & 91.0 & \texttt{round\_4} & 91.0\\
+\texttt{round\_6} & 91.0 & \texttt{trunc\_4} & 90.9\\
+\texttt{trunc\_6} & 90.7 & \texttt{add8u\_6QU} & 91.1\\
+ETA-I, $k=5$ & 91.3 & LOA, $k=5$ & 91.1\\
+\texttt{add8u\_6SM} & 91.0 & \texttt{add8u\_2LL} & 91.3\\
+AMA2, $k=3$ & 91.2 & \texttt{add8u\_0PL} & 91.0\\
+\bottomrule
+\end{tabular}
+\end{table}
+\paragraph{Requantization headroom}
+Per output channel, requantization to INT8 after each layer discards at
+least 7.4 accumulator least significant bits, with per-layer medians of
+8.5--10.6 bits.
+
+\paragraph{Equivalence testing}
+The one-point margin is an application-level tolerance selected after the
+initial 1000-image analysis. We then ran a paired two one-sided test (TOST)
+at level 0.05. It used per-image correctness differences from the exact
+accumulator and a $\pm1$-point margin. The 10{,}000-image evaluation was
+also added after the first analysis of 1000 images.
+
+Under the same 90\% paired intervals but a half-point margin,
+\texttt{round\_5}, \texttt{round\_6}, \texttt{round\_7},
+\texttt{trunc\_4}, \texttt{add8u\_0E2}, \texttt{add8u\_6QU},
+\texttt{add8u\_2LL}, and LOA at $k=5$ remain equivalent.
+\texttt{round\_8} and \texttt{trunc\_6} do not. The former has an interval of
+$[-0.784,-0.296]$ percentage points, so its classification as
+equivalent at 33\% less area depends on the one-point tolerance
+(\path{cnn_cal_10k_tost_half_point.json}).
+
+On 1000 images, most evaluated designs are equivalent to exact.
+The exceptions are \texttt{trunc\_7} and \texttt{trunc\_8}, whose
+differences are $-2.1$ and $-54.4$ points. The result for
+\texttt{round\_8} is inconclusive. The
+last difference is $-0.6$ points, with a 90\% interval of $[-1.4,+0.2]$.
+At this sample size, \texttt{round\_7} is the cheapest equivalent
+accumulator. Its difference is $+0.1$ points, with interval
+$[-0.5,+0.7]$. Its area is 183.8~$\mu$m$^2$, or 28\% less than exact.
+
+On 10{,}000 images, \texttt{round\_7} loses 0.11 points, with interval
+$[-0.28,+0.06]$. The \texttt{round\_8} loss is 0.54 points, with
+interval $[-0.78,-0.30]$. The cells
+\texttt{add8u\_0E2}, \texttt{add8u\_6QU}, \texttt{add8u\_2LL}, and LOA at
+$k=5$ remain within 0.12 points. Quantizer-twin predictions agree on 99.6\%
+of images for \texttt{add8u\_6QU} and \texttt{trunc\_4}, 99.6\% for LOA and
+\texttt{round\_5}, and 98.9\% for \texttt{add8u\_0E2} and
+\texttt{round\_7} among the 10{,}000 images. The remaining
+disagreements reflect the bounded readout term and small differences
+between calibrated preloads.
+
+\paragraph{Energy on CNN operands}
+We re-simulated every mapped signed netlist on 28 serial accumulations of
+real products. The products came from four test images and two layers, with
+$L=144$ and $576$, for 10{,}080 operations in total.
+
+\section{CIFAR-100 replication details}
+
+\paragraph{Protocol}
+The protocol was written before the CIFAR-100 network was trained and is
+included in the public artifact under \texttt{paper/integration\_carry/qa/}. Its SHA-256 hash was
+recorded in the revision log at that time. It fixes the network, training
+recipe, quantization, compensation, test set, the twelve designs, the two
+area rankings, and hypotheses H1--H4. The network was trained for 50
+epochs with seed~0 and reached 67.49\% float test accuracy. The analysis
+script is \texttt{cifar100\_analysis.py}, and its output is
+\texttt{cifar100\_analysis.json}.
+
+\paragraph{Equivalence}
+At the secondary half-point margin, the same nine designs are equivalent.
+McNemar tests against exact give $p<10^{-6}$ for \texttt{round\_8},
+\texttt{trunc\_6}, and \texttt{trunc\_7}, and $p\ge0.11$ for every other
+design.
+
+\paragraph{Prediction agreement}
+On CIFAR-100, prediction agreement with exact varies across
+references. It is 97.4\% for \texttt{round\_5} and 96.2\% for
+\texttt{round\_6}. It is 93.6\% for \texttt{round\_7} and 87.1\%
+for \texttt{round\_8}. For \texttt{trunc\_4}, it is 96.4\%.
+The corresponding CIFAR-10 values on 10{,}000 images
+are 97.4--99.4\%. \texttt{add8u\_0E2} agrees with \texttt{round\_7} on
+95.0\% of images and with every other reference on at most 93.7\%;
+\texttt{add8u\_6QU} agrees with \texttt{trunc\_4} on 98.1\% and with
+every other reference on at most 96.4\%; LOA agrees with \texttt{round\_5}
+on 97.9\% and with every other reference on at most 97.5\%.
+
+\paragraph{Variance prediction}
+For H2, each layer's prediction uses Theorem~4 under the pooled
+residue law. It is $\mathrm{Var}+(\E E_K+p)^2$, where $p$ is the applied
+preload. Over 209 layer--design pairs, the median ratio is
+0.876. Taking the variance alone, the per-design median ratio is 0.94--0.99
+for \texttt{round\_5}--\texttt{round\_8}, LOA, \texttt{add8u\_0E2}, and
+\texttt{add8u\_2LL}, but 0.20--0.25 for \texttt{trunc\_4},
+\texttt{trunc\_6}, \texttt{trunc\_7}, and \texttt{add8u\_6QU}. The
+CIFAR-10 10{,}000-image run gives the same split (0.94--0.99 and
+0.22--0.27).
+
+The post hoc diagnostic \texttt{mse\_sparsity\_diag.py} computes twin
+error exactly from products of 24 test images in each convolution
+layer. It covers \texttt{trunc\_4}, \texttt{trunc\_6}, and
+\texttt{round\_5}.
+Using per-output-channel residue laws changes the ratios little (median
+0.26 for \texttt{trunc\_4}). If $N$ is the number of nonzero products in
+an output, and the nonzero residues are independent with per-operation
+error mean $\mu$ and variance $\sigma^2$, then
+$\mathrm{Var}(E)=\E N\,\sigma^2+\mathrm{Var}(N)\,\mu^2$. With this
+conditioning, the median ratios are 1.00 for all three designs on both
+datasets, and every layer lies in 0.95--1.04. The second term is negligible
+for rounding, where $\mu\approx0$, which explains why rounding-type
+designs were already predicted well.
+
+\section{FIR details}
+
+For each $L$, we estimate the product-residue law and compensation
+constants from 20{,}000 windows in images 1--12. We measure SNR on another
+20{,}000 held-out windows from images 13--24. We form 95\%
+bootstrap intervals over windows with 1000 resamples, using the same
+17 references and 18 approximate designs as the CNN evaluation.
+
+The bounded readout term has a larger effect on shorter filters. At
+$L=256$, \texttt{add8u\_0TP} reaches exactly the 46.64~dB of
+\texttt{trunc\_5}. At $L=64$, the largest difference from a quantizer twin
+is 0.5~dB, for LOA at $k=5$.
+
+Theorem~4 predicts error MSE with median predicted-to-measured ratios
+of 0.98 and 0.96. Their respective interquartile ranges are
+0.88--1.14 and 0.78--1.09. Neighboring pixels make successive
+products dependent, so individual errors can be larger. The model
+underestimates AMA2 and \texttt{add8u\_0PL} by up to 17 and 1.9
+times. It misestimates single-bit rounding and eight-bit truncation
+by 0.56 and 3.3.
+
+For the hardware comparison, we re-simulate every signed netlist on
+40 serial FIR accumulations of held-out products per length.
+Under the strict rule that a reference must have at least the design's
+measured SNR, area penalties range from $+2.4\%$ to $+22.0\%$.
+Energy penalties range from $+4.0\%$ to $+28.3\%$.
+If overlapping SNR intervals count as equal
+accuracy, the minimum area penalty at $L=256$ becomes $+4.6\%$. The energy
+penalty range then becomes $+8.4\%$ to $+28.3\%$.
+
+\end{document}

@@ -1,0 +1,20 @@
+{
+ "round_4": {
+  "preload": 16777072,
+  "area_zero": 185.67,
+  "area_const": 191.52,
+  "delta": 5.850000000000023
+ },
+ "evo_add8u_6QU": {
+  "preload": 921,
+  "area_zero": 199.764,
+  "area_const": 193.12,
+  "delta": -6.6440000000000055
+ },
+ "trunc_4": {
+  "preload": 936,
+  "area_zero": 183.54,
+  "area_const": 183.54,
+  "delta": 0.0
+ }
+}

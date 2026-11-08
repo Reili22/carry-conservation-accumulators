@@ -1,0 +1,108 @@
+[u] metric=diffusion
+  diffusion blind n=40: area med 12.5% min 1.4% | energy med 12.9% min 3.9% | delay med 1.9% min 0.0% | logic-only med 8.3% min -0.0% (neg: ['evo_add12u_39N'])
+      better best-area or best-energy: []
+      joint-undominated points: []
+      iso-delay point cheaper in both area and energy: []
+  diffusion aware n=49: area med 15.2% min 4.7% | energy med 17.0% min 4.9% | delay med 8.8% min 2.2% | logic-only med 11.2% min 1.0% (neg: [])
+      better best-area or best-energy: []
+      joint-undominated points: [('ama2_2', 2)]
+      iso-delay point cheaper in both area and energy: []
+[u] metric=mse_comp_144
+  mse_comp_144 blind n=40: area med 12.5% min 1.4% | energy med 12.9% min 3.9% | delay med 1.9% min 0.0% | logic-only med 8.3% min -0.0% (neg: ['evo_add12u_39N'])
+      better best-area or best-energy: []
+      joint-undominated points: []
+      iso-delay point cheaper in both area and energy: []
+  mse_comp_144 aware n=49: area med 15.2% min 4.7% | energy med 17.0% min 4.9% | delay med 8.8% min 2.2% | logic-only med 11.2% min 1.0% (neg: [])
+      better best-area or best-energy: []
+      joint-undominated points: [('ama2_2', 2)]
+      iso-delay point cheaper in both area and energy: []
+[u] metric=mse_comp_576
+  mse_comp_576 blind n=40: area med 12.5% min 1.4% | energy med 12.9% min 3.9% | delay med 1.9% min 0.0% | logic-only med 8.3% min -0.0% (neg: ['evo_add12u_39N'])
+      better best-area or best-energy: []
+      joint-undominated points: []
+      iso-delay point cheaper in both area and energy: []
+  mse_comp_576 aware n=49: area med 15.2% min 4.7% | energy med 17.0% min 4.9% | delay med 8.8% min 2.2% | logic-only med 11.2% min 1.0% (neg: [])
+      better best-area or best-energy: []
+      joint-undominated points: [('ama2_2', 2)]
+      iso-delay point cheaper in both area and energy: []
+[u] metric=diffusion_prod
+  diffusion_prod blind n=40: area med 11.5% min 1.4% | energy med 10.8% min 3.9% | delay med 1.9% min 0.0% | logic-only med 6.9% min -0.0% (neg: ['evo_add12u_39N'])
+      better best-area or best-energy: []
+      joint-undominated points: []
+      iso-delay point cheaper in both area and energy: []
+  diffusion_prod aware n=49: area med 13.7% min 2.1% | energy med 14.6% min 4.1% | delay med 7.9% min -3.1% | logic-only med 8.3% min -4.4% (neg: ['evo_add16u_0NL'])
+      better best-area or best-energy: []
+      joint-undominated points: [('evo_add12u_4NT', 2), ('ama5_5', 2), ('ama2_2', 2)]
+      iso-delay point cheaper in both area and energy: []
+[u] metric=mse_comp_144_prod
+  mse_comp_144_prod blind n=40: area med 11.5% min 1.4% | energy med 10.8% min 3.9% | delay med 1.9% min 0.0% | logic-only med 6.9% min -0.0% (neg: ['evo_add12u_39N'])
+      better best-area or best-energy: []
+      joint-undominated points: []
+      iso-delay point cheaper in both area and energy: []
+  mse_comp_144_prod aware n=49: area med 13.7% min 2.1% | energy med 14.6% min 4.1% | delay med 7.9% min -3.1% | logic-only med 8.3% min -4.4% (neg: ['evo_add16u_0NL'])
+      better best-area or best-energy: []
+      joint-undominated points: [('evo_add12u_4NT', 2), ('ama5_5', 2), ('ama2_2', 2)]
+      iso-delay point cheaper in both area and energy: []
+[u] metric=mse_comp_576_prod
+  mse_comp_576_prod blind n=40: area med 11.5% min 1.4% | energy med 10.8% min 3.9% | delay med 1.9% min 0.0% | logic-only med 6.9% min -0.0% (neg: ['evo_add12u_39N'])
+      better best-area or best-energy: []
+      joint-undominated points: []
+      iso-delay point cheaper in both area and energy: []
+  mse_comp_576_prod aware n=49: area med 13.7% min 2.1% | energy med 14.6% min 4.1% | delay med 7.9% min -3.1% | logic-only med 8.3% min -4.4% (neg: ['evo_add16u_0NL'])
+      better best-area or best-energy: []
+      joint-undominated points: [('evo_add12u_4NT', 2), ('ama5_5', 2), ('ama2_2', 2)]
+      iso-delay point cheaper in both area and energy: []
+[s] metric=diffusion
+  diffusion blind n=40: area med 10.9% min 1.9% | energy med 11.8% min 3.8% | delay med 6.5% min 0.0% | logic-only med 6.2% min 0.0% (neg: [])
+      better best-area or best-energy: []
+      joint-undominated points: []
+      iso-delay point cheaper in both area and energy: []
+  diffusion aware n=49: area med 12.8% min 2.5% | energy med 14.9% min 5.8% | delay med 7.8% min -0.8% | logic-only med 8.4% min 1.0% (neg: [])
+      better best-area or best-energy: []
+      joint-undominated points: [('evo_add12u_4NT', 1), ('ama2_2', 1), ('ama2_3', 1)]
+      iso-delay point cheaper in both area and energy: []
+[s] metric=mse_comp_144
+  mse_comp_144 blind n=40: area med 10.9% min 1.9% | energy med 11.8% min 3.8% | delay med 6.5% min 0.0% | logic-only med 6.2% min 0.0% (neg: [])
+      better best-area or best-energy: []
+      joint-undominated points: []
+      iso-delay point cheaper in both area and energy: []
+  mse_comp_144 aware n=49: area med 12.8% min 2.5% | energy med 14.9% min 5.8% | delay med 7.8% min -0.8% | logic-only med 8.4% min 1.0% (neg: [])
+      better best-area or best-energy: []
+      joint-undominated points: [('evo_add12u_4NT', 1), ('ama2_2', 1), ('ama2_3', 1)]
+      iso-delay point cheaper in both area and energy: []
+[s] metric=mse_comp_576
+  mse_comp_576 blind n=40: area med 10.9% min 1.9% | energy med 11.8% min 3.8% | delay med 6.5% min 0.0% | logic-only med 6.2% min 0.0% (neg: [])
+      better best-area or best-energy: []
+      joint-undominated points: []
+      iso-delay point cheaper in both area and energy: []
+  mse_comp_576 aware n=49: area med 12.8% min 2.5% | energy med 14.9% min 5.8% | delay med 7.8% min -0.8% | logic-only med 8.4% min 1.0% (neg: [])
+      better best-area or best-energy: []
+      joint-undominated points: [('evo_add12u_4NT', 1), ('ama2_2', 1), ('ama2_3', 1)]
+      iso-delay point cheaper in both area and energy: []
+[s] metric=diffusion_prod
+  diffusion_prod blind n=40: area med 9.5% min 1.9% | energy med 11.1% min 3.8% | delay med 5.7% min 0.0% | logic-only med 5.9% min 0.0% (neg: [])
+      better best-area or best-energy: []
+      joint-undominated points: []
+      iso-delay point cheaper in both area and energy: []
+  diffusion_prod aware n=49: area med 12.2% min 1.7% | energy med 12.6% min 4.1% | delay med 6.8% min -0.8% | logic-only med 6.0% min -0.4% (neg: ['evo_add12u_4NT'])
+      better best-area or best-energy: []
+      joint-undominated points: [('evo_add8u_6MZ', 1), ('evo_add8u_2LL', 1), ('evo_add8u_2J3', 1), ('evo_add12u_0C9', 3), ('evo_add12u_4NT', 2), ('ama5_3', 1), ('ama2_2', 1), ('ama2_3', 1)]
+      iso-delay point cheaper in both area and energy: ['evo_add8u_2LL', 'evo_add8u_2J3', 'evo_add12u_0C9']
+[s] metric=mse_comp_144_prod
+  mse_comp_144_prod blind n=40: area med 10.3% min 1.9% | energy med 11.5% min 3.8% | delay med 5.7% min 0.0% | logic-only med 6.0% min 0.0% (neg: [])
+      better best-area or best-energy: []
+      joint-undominated points: []
+      iso-delay point cheaper in both area and energy: []
+  mse_comp_144_prod aware n=49: area med 12.2% min 1.7% | energy med 12.6% min 4.1% | delay med 6.9% min -0.8% | logic-only med 6.4% min -0.4% (neg: ['evo_add12u_4NT'])
+      better best-area or best-energy: []
+      joint-undominated points: [('evo_add8u_6MZ', 1), ('evo_add8u_2LL', 1), ('evo_add8u_2J3', 1), ('evo_add12u_0C9', 3), ('evo_add12u_4NT', 2), ('ama5_3', 1), ('ama2_2', 1), ('ama2_3', 1)]
+      iso-delay point cheaper in both area and energy: ['evo_add8u_2LL', 'evo_add8u_2J3', 'evo_add12u_0C9']
+[s] metric=mse_comp_576_prod
+  mse_comp_576_prod blind n=40: area med 10.3% min 1.9% | energy med 11.5% min 3.8% | delay med 5.7% min 0.0% | logic-only med 6.0% min 0.0% (neg: [])
+      better best-area or best-energy: []
+      joint-undominated points: []
+      iso-delay point cheaper in both area and energy: []
+  mse_comp_576_prod aware n=49: area med 12.2% min 1.7% | energy med 12.6% min 4.1% | delay med 6.9% min -0.8% | logic-only med 6.4% min -0.4% (neg: ['evo_add12u_4NT'])
+      better best-area or best-energy: []
+      joint-undominated points: [('evo_add8u_6MZ', 1), ('evo_add8u_2LL', 1), ('evo_add8u_2J3', 1), ('evo_add12u_0C9', 3), ('evo_add12u_4NT', 2), ('ama5_3', 1), ('ama2_2', 1), ('ama2_3', 1)]
+      iso-delay point cheaper in both area and energy: ['evo_add8u_2LL', 'evo_add8u_2J3', 'evo_add12u_0C9']

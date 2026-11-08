@@ -1,0 +1,590 @@
+{
+ "64": {
+  "rows": [
+   {
+    "design": "evo_add8u_6QU",
+    "snr": 58.681489474224556,
+    "strict": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.08321797667583186,
+     "ref_energy": "round_4",
+     "energy_pen": 0.07677932748710514
+    },
+    "tolerant": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.08321797667583186,
+     "ref_energy": "round_4",
+     "energy_pen": 0.07677932748710514
+    }
+   },
+   {
+    "design": "evo_add8u_0E2",
+    "snr": 42.449938219278366,
+    "strict": {
+     "ref_area": "trunc_6",
+     "area_pen": 0.05337078651685401,
+     "ref_energy": "trunc_6",
+     "energy_pen": 0.08981383404247989
+    },
+    "tolerant": {
+     "ref_area": "trunc_6",
+     "area_pen": 0.05337078651685401,
+     "ref_energy": "trunc_6",
+     "energy_pen": 0.08981383404247989
+    }
+   },
+   {
+    "design": "eta1_5",
+    "snr": 52.69266837225764,
+    "strict": {
+     "ref_area": "trunc_5",
+     "area_pen": 0.16665351067608647,
+     "ref_energy": "trunc_5",
+     "energy_pen": 0.18297541269264794
+    },
+    "tolerant": {
+     "ref_area": "trunc_5",
+     "area_pen": 0.16665351067608647,
+     "ref_energy": "trunc_5",
+     "energy_pen": 0.18297541269264794
+    }
+   },
+   {
+    "design": "loawa_4",
+    "snr": 58.681489474224556,
+    "strict": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.10968047786100321,
+     "ref_energy": "round_4",
+     "energy_pen": 0.08692651168833465
+    },
+    "tolerant": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.10968047786100321,
+     "ref_energy": "round_4",
+     "energy_pen": 0.08692651168833465
+    }
+   },
+   {
+    "design": "loa_5",
+    "snr": 54.052252634963615,
+    "strict": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.14627856262444294,
+     "ref_energy": "round_4",
+     "energy_pen": 0.0975564597644889
+    },
+    "tolerant": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.14627856262444294,
+     "ref_energy": "round_4",
+     "energy_pen": 0.0975564597644889
+    }
+   },
+   {
+    "design": "ama5_4",
+    "snr": 59.71454437225315,
+    "strict": {
+     "ref_area": "trunc_3",
+     "area_pen": 0.05967591429494323,
+     "ref_energy": "trunc_3",
+     "energy_pen": 0.10835499481377608
+    },
+    "tolerant": {
+     "ref_area": "round_4",
+     "area_pen": 0.1099906015037595,
+     "ref_energy": "round_4",
+     "energy_pen": 0.14873681633546543
+    }
+   },
+   {
+    "design": "evo_add8u_6SM",
+    "snr": 63.9817511756917,
+    "strict": {
+     "ref_area": "round_3",
+     "area_pen": 0.069484665727924,
+     "ref_energy": "round_3",
+     "energy_pen": 0.044121075783925656
+    },
+    "tolerant": {
+     "ref_area": "trunc_3",
+     "area_pen": 0.08354269102393852,
+     "ref_energy": "trunc_3",
+     "energy_pen": 0.08225657926879881
+    }
+   },
+   {
+    "design": "evo_add8u_0NS",
+    "snr": 58.46862369235764,
+    "strict": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.1550962358964636,
+     "ref_energy": "round_4",
+     "energy_pen": 0.154115342501437
+    },
+    "tolerant": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.1550962358964636,
+     "ref_energy": "round_4",
+     "energy_pen": 0.154115342501437
+    }
+   },
+   {
+    "design": "evo_add8u_6MZ",
+    "snr": 71.41020387879162,
+    "strict": {
+     "ref_area": "round_2",
+     "area_pen": 0.057766159452992794,
+     "ref_energy": "round_2",
+     "energy_pen": 0.09841248689752091
+    },
+    "tolerant": {
+     "ref_area": "round_2",
+     "area_pen": 0.057766159452992794,
+     "ref_energy": "round_2",
+     "energy_pen": 0.09841248689752091
+    }
+   },
+   {
+    "design": "evo_add8u_2LL",
+    "snr": 54.08193379966066,
+    "strict": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.023968901109320262,
+     "ref_energy": "round_4",
+     "energy_pen": 0.0605586546857344
+    },
+    "tolerant": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.023968901109320262,
+     "ref_energy": "round_4",
+     "energy_pen": 0.0605586546857344
+    }
+   },
+   {
+    "design": "ama2_3",
+    "snr": 64.02829742622538,
+    "strict": {
+     "ref_area": "round_3",
+     "area_pen": 0.0965842167255595,
+     "ref_energy": "round_3",
+     "energy_pen": 0.1520581620484749
+    },
+    "tolerant": {
+     "ref_area": "round_3",
+     "area_pen": 0.0965842167255595,
+     "ref_energy": "round_3",
+     "energy_pen": 0.1520581620484749
+    }
+   },
+   {
+    "design": "evo_add8u_6S4",
+    "snr": 58.39157139218655,
+    "strict": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.13869346733668353,
+     "ref_energy": "round_4",
+     "energy_pen": 0.12133787969236742
+    },
+    "tolerant": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.13869346733668353,
+     "ref_energy": "round_4",
+     "energy_pen": 0.12133787969236742
+    }
+   },
+   {
+    "design": "evo_add8u_0NQ",
+    "snr": 52.44394377594574,
+    "strict": {
+     "ref_area": "trunc_5",
+     "area_pen": 0.17321506097801653,
+     "ref_energy": "trunc_5",
+     "energy_pen": 0.25616861593725937
+    },
+    "tolerant": {
+     "ref_area": "trunc_5",
+     "area_pen": 0.17321506097801653,
+     "ref_energy": "trunc_5",
+     "energy_pen": 0.25616861593725937
+    }
+   },
+   {
+    "design": "evo_add8u_0PL",
+    "snr": 45.890065102994285,
+    "strict": {
+     "ref_area": "trunc_6",
+     "area_pen": 0.1839676438286728,
+     "ref_energy": "trunc_6",
+     "energy_pen": 0.23255383950255615
+    },
+    "tolerant": {
+     "ref_area": "trunc_6",
+     "area_pen": 0.1839676438286728,
+     "ref_energy": "trunc_6",
+     "energy_pen": 0.23255383950255615
+    }
+   },
+   {
+    "design": "evo_add8u_0TP",
+    "snr": 52.708830704794366,
+    "strict": {
+     "ref_area": "trunc_5",
+     "area_pen": 0.05640959861072736,
+     "ref_energy": "trunc_5",
+     "energy_pen": 0.12581834641036616
+    },
+    "tolerant": {
+     "ref_area": "trunc_5",
+     "area_pen": 0.05640959861072736,
+     "ref_energy": "trunc_5",
+     "energy_pen": 0.12581834641036616
+    }
+   },
+   {
+    "design": "eta1_4",
+    "snr": 58.681489474224556,
+    "strict": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.14499857779463365,
+     "ref_energy": "round_4",
+     "energy_pen": 0.12157404952088124
+    },
+    "tolerant": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.14499857779463365,
+     "ref_energy": "round_4",
+     "energy_pen": 0.12157404952088124
+    }
+   },
+   {
+    "design": "loa_4",
+    "snr": 59.766228889249966,
+    "strict": {
+     "ref_area": "trunc_3",
+     "area_pen": 0.06088719807630194,
+     "ref_energy": "trunc_3",
+     "energy_pen": 0.07000082309997446
+    },
+    "tolerant": {
+     "ref_area": "round_4",
+     "area_pen": 0.11125939849624067,
+     "ref_energy": "round_4",
+     "energy_pen": 0.10898524818820499
+    }
+   },
+   {
+    "design": "evo_add8u_4M7",
+    "snr": 59.41880973302261,
+    "strict": {
+     "ref_area": "round_4",
+     "area_pen": 0.08751879699248111,
+     "ref_energy": "round_4",
+     "energy_pen": 0.13424042600737707
+    },
+    "tolerant": {
+     "ref_area": "round_4",
+     "area_pen": 0.08751879699248111,
+     "ref_energy": "round_4",
+     "energy_pen": 0.13424042600737707
+    }
+   }
+  ],
+  "mismatches": [],
+  "trace_ops": 2560
+ },
+ "256": {
+  "rows": [
+   {
+    "design": "evo_add8u_6QU",
+    "snr": 52.21600138077448,
+    "strict": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.08321797667583186,
+     "ref_energy": "trunc_4",
+     "energy_pen": 0.08375682315303301
+    },
+    "tolerant": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.08321797667583186,
+     "ref_energy": "trunc_4",
+     "energy_pen": 0.08375682315303301
+    }
+   },
+   {
+    "design": "evo_add8u_0E2",
+    "snr": 38.42430410353646,
+    "strict": {
+     "ref_area": "trunc_6",
+     "area_pen": 0.05337078651685401,
+     "ref_energy": "trunc_6",
+     "energy_pen": 0.13288601790891574
+    },
+    "tolerant": {
+     "ref_area": "trunc_6",
+     "area_pen": 0.05337078651685401,
+     "ref_energy": "trunc_6",
+     "energy_pen": 0.13288601790891574
+    }
+   },
+   {
+    "design": "eta1_5",
+    "snr": 46.6680336043202,
+    "strict": {
+     "ref_area": "round_5",
+     "area_pen": 0.14562824587241296,
+     "ref_energy": "round_5",
+     "energy_pen": 0.04046411011029227
+    },
+    "tolerant": {
+     "ref_area": "trunc_5",
+     "area_pen": 0.16665351067608647,
+     "ref_energy": "trunc_5",
+     "energy_pen": 0.18761125933365164
+    }
+   },
+   {
+    "design": "loawa_4",
+    "snr": 52.22462897490022,
+    "strict": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.10968047786100321,
+     "ref_energy": "trunc_4",
+     "energy_pen": 0.08977720528585964
+    },
+    "tolerant": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.10968047786100321,
+     "ref_energy": "trunc_4",
+     "energy_pen": 0.08977720528585964
+    }
+   },
+   {
+    "design": "loa_5",
+    "snr": 49.07780105847951,
+    "strict": {
+     "ref_area": "round_5",
+     "area_pen": 0.17140144174870153,
+     "ref_energy": "round_5",
+     "energy_pen": 0.14700144542750615
+    },
+    "tolerant": {
+     "ref_area": "round_5",
+     "area_pen": 0.17140144174870153,
+     "ref_energy": "round_5",
+     "energy_pen": 0.14700144542750615
+    }
+   },
+   {
+    "design": "ama5_4",
+    "snr": 54.80427531182077,
+    "strict": {
+     "ref_area": "round_4",
+     "area_pen": 0.1099906015037595,
+     "ref_energy": "round_4",
+     "energy_pen": 0.1641027945011575
+    },
+    "tolerant": {
+     "ref_area": "round_4",
+     "area_pen": 0.1099906015037595,
+     "ref_energy": "round_4",
+     "energy_pen": 0.1641027945011575
+    }
+   },
+   {
+    "design": "evo_add8u_6SM",
+    "snr": 57.839311363111506,
+    "strict": {
+     "ref_area": "trunc_3",
+     "area_pen": 0.08354269102393852,
+     "ref_energy": "trunc_3",
+     "energy_pen": 0.1025602782416597
+    },
+    "tolerant": {
+     "ref_area": "trunc_3",
+     "area_pen": 0.08354269102393852,
+     "ref_energy": "trunc_3",
+     "energy_pen": 0.1025602782416597
+    }
+   },
+   {
+    "design": "evo_add8u_0NS",
+    "snr": 51.451822865654215,
+    "strict": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.1550962358964636,
+     "ref_energy": "trunc_4",
+     "energy_pen": 0.15490159921388025
+    },
+    "tolerant": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.1550962358964636,
+     "ref_energy": "trunc_4",
+     "energy_pen": 0.15490159921388025
+    }
+   },
+   {
+    "design": "evo_add8u_6MZ",
+    "snr": 64.51973449032886,
+    "strict": {
+     "ref_area": "round_2",
+     "area_pen": 0.057766159452992794,
+     "ref_energy": "round_2",
+     "energy_pen": 0.08816370480317093
+    },
+    "tolerant": {
+     "ref_area": "round_2",
+     "area_pen": 0.057766159452992794,
+     "ref_energy": "round_2",
+     "energy_pen": 0.08816370480317093
+    }
+   },
+   {
+    "design": "evo_add8u_2LL",
+    "snr": 49.11463320528226,
+    "strict": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.023968901109320262,
+     "ref_energy": "trunc_4",
+     "energy_pen": 0.08003055695460759
+    },
+    "tolerant": {
+     "ref_area": "round_5",
+     "area_pen": 0.046411130920083865,
+     "ref_energy": "round_5",
+     "energy_pen": 0.08813361320275859
+    }
+   },
+   {
+    "design": "ama2_3",
+    "snr": 49.11260058473892,
+    "strict": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.17401156727031397,
+     "ref_energy": "trunc_4",
+     "energy_pen": 0.25828545452036966
+    },
+    "tolerant": {
+     "ref_area": "round_5",
+     "area_pen": 0.1997422680412373,
+     "ref_energy": "round_5",
+     "energy_pen": 0.2677258890974792
+    }
+   },
+   {
+    "design": "evo_add8u_6S4",
+    "snr": 51.95451396162948,
+    "strict": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.13869346733668353,
+     "ref_energy": "trunc_4",
+     "energy_pen": 0.13069582802313273
+    },
+    "tolerant": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.13869346733668353,
+     "ref_energy": "trunc_4",
+     "energy_pen": 0.13069582802313273
+    }
+   },
+   {
+    "design": "evo_add8u_0NQ",
+    "snr": 45.78546969637699,
+    "strict": {
+     "ref_area": "trunc_5",
+     "area_pen": 0.17321506097801653,
+     "ref_energy": "trunc_5",
+     "energy_pen": 0.2832055697585216
+    },
+    "tolerant": {
+     "ref_area": "trunc_5",
+     "area_pen": 0.17321506097801653,
+     "ref_energy": "trunc_5",
+     "energy_pen": 0.2832055697585216
+    }
+   },
+   {
+    "design": "evo_add8u_0PL",
+    "snr": 37.628331524862354,
+    "strict": {
+     "ref_area": "round_7",
+     "area_pen": 0.21993602019498604,
+     "ref_energy": "trunc_6",
+     "energy_pen": 0.24221805816917863
+    },
+    "tolerant": {
+     "ref_area": "round_7",
+     "area_pen": 0.21993602019498604,
+     "ref_energy": "trunc_6",
+     "energy_pen": 0.24221805816917863
+    }
+   },
+   {
+    "design": "evo_add8u_0TP",
+    "snr": 46.644290168957085,
+    "strict": {
+     "ref_area": "trunc_5",
+     "area_pen": 0.05640959861072736,
+     "ref_energy": "trunc_5",
+     "energy_pen": 0.1326982116857538
+    },
+    "tolerant": {
+     "ref_area": "trunc_5",
+     "area_pen": 0.05640959861072736,
+     "ref_energy": "trunc_5",
+     "energy_pen": 0.1326982116857538
+    }
+   },
+   {
+    "design": "eta1_4",
+    "snr": 52.22462897490022,
+    "strict": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.14499857779463365,
+     "ref_energy": "trunc_4",
+     "energy_pen": 0.1238255380451192
+    },
+    "tolerant": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.14499857779463365,
+     "ref_energy": "trunc_4",
+     "energy_pen": 0.1238255380451192
+    }
+   },
+   {
+    "design": "loa_4",
+    "snr": 54.8073048858852,
+    "strict": {
+     "ref_area": "trunc_3",
+     "area_pen": 0.06088719807630194,
+     "ref_energy": "trunc_3",
+     "energy_pen": 0.10384306616879813
+    },
+    "tolerant": {
+     "ref_area": "round_4",
+     "area_pen": 0.11125939849624067,
+     "ref_energy": "round_4",
+     "energy_pen": 0.12473132450875446
+    }
+   },
+   {
+    "design": "evo_add8u_4M7",
+    "snr": 51.95628815906539,
+    "strict": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.09710818242154162,
+     "ref_energy": "trunc_4",
+     "energy_pen": 0.15101491583085047
+    },
+    "tolerant": {
+     "ref_area": "trunc_4",
+     "area_pen": 0.09710818242154162,
+     "ref_energy": "trunc_4",
+     "energy_pen": 0.15101491583085047
+    }
+   }
+  ],
+  "mismatches": [],
+  "trace_ops": 10240
+ }
+}

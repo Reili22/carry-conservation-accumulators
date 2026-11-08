@@ -1,0 +1,242 @@
+[
+ {
+  "cell": "add8u_0NH",
+  "k": 3,
+  "stateless": true,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": 7,
+  "q": 8
+ },
+ {
+  "cell": "add8u_0NQ",
+  "k": 6,
+  "stateless": false,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": null,
+  "q": 64
+ },
+ {
+  "cell": "add8u_0NS",
+  "k": 5,
+  "stateless": false,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": null,
+  "q": 32
+ },
+ {
+  "cell": "add8u_0PA",
+  "k": 5,
+  "stateless": true,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": 31,
+  "q": 32
+ },
+ {
+  "cell": "add8u_0PL",
+  "k": 7,
+  "stateless": false,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": null,
+  "q": 128
+ },
+ {
+  "cell": "add8u_0UK",
+  "k": 8,
+  "stateless": false,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": null,
+  "q": 256
+ },
+ {
+  "cell": "add8u_6MZ",
+  "k": 3,
+  "stateless": false,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": null,
+  "q": 8
+ },
+ {
+  "cell": "add8u_6PT",
+  "k": 1,
+  "stateless": true,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": 1,
+  "q": 2
+ },
+ {
+  "cell": "add8u_00M",
+  "k": 8,
+  "stateless": false,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": null,
+  "q": 256
+ },
+ {
+  "cell": "add8u_02Y",
+  "k": 8,
+  "stateless": false,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": null,
+  "q": 256
+ },
+ {
+  "cell": "add8u_0TP",
+  "k": 5,
+  "stateless": true,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": 1,
+  "q": 32
+ },
+ {
+  "cell": "add8u_6P8",
+  "k": 2,
+  "stateless": true,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": 3,
+  "q": 4
+ },
+ {
+  "cell": "add8u_6R6",
+  "k": 5,
+  "stateless": true,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": 15,
+  "q": 32
+ },
+ {
+  "cell": "add8u_6S4",
+  "k": 8,
+  "stateless": false,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": null,
+  "q": 256
+ },
+ {
+  "cell": "add8u_6SM",
+  "k": 4,
+  "stateless": false,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": null,
+  "q": 16
+ },
+ {
+  "cell": "add8u_0JM",
+  "k": 7,
+  "stateless": true,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": 119,
+  "q": 128
+ },
+ {
+  "cell": "add8u_108",
+  "k": 5,
+  "stateless": true,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": 31,
+  "q": 32
+ },
+ {
+  "cell": "add8u_3RE",
+  "k": 8,
+  "stateless": false,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": null,
+  "q": 256
+ },
+ {
+  "cell": "add8u_6K6",
+  "k": 3,
+  "stateless": true,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": 7,
+  "q": 8
+ },
+ {
+  "cell": "add8u_6QU",
+  "k": 4,
+  "stateless": true,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": 15,
+  "q": 16
+ },
+ {
+  "cell": "add8u_0E2",
+  "k": 7,
+  "stateless": true,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": 1,
+  "q": 128
+ },
+ {
+  "cell": "add8u_2AM",
+  "k": 1,
+  "stateless": true,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": 1,
+  "q": 2
+ },
+ {
+  "cell": "add8u_2LL",
+  "k": 6,
+  "stateless": false,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": null,
+  "q": 64
+ },
+ {
+  "cell": "add8u_6FT",
+  "k": 4,
+  "stateless": true,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": 15,
+  "q": 16
+ },
+ {
+  "cell": "add8u_6LG",
+  "k": 3,
+  "stateless": true,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": 7,
+  "q": 8
+ },
+ {
+  "cell": "add8u_6TH",
+  "k": 3,
+  "stateless": false,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": null,
+  "q": 8
+ },
+ {
+  "cell": "add8u_05G",
+  "k": 2,
+  "stateless": true,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": 3,
+  "q": 4
+ },
+ {
+  "cell": "add8u_0D0",
+  "k": 8,
+  "stateless": false,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": null,
+  "q": 256
+ },
+ {
+  "cell": "add8u_2J3",
+  "k": 5,
+  "stateless": false,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": null,
+  "q": 32
+ },
+ {
+  "cell": "add8u_4M7",
+  "k": 4,
+  "stateless": false,
+  "conservation_residual": 0,
+  "max_gap_to_quantizer": null,
+  "q": 16
+ }
+]

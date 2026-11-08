@@ -1,0 +1,6 @@
+trunc_4_sparsity: pooled-law var ratio median 1.005 [0.951,1.032]; per-channel-law 1.005 [0.951,1.032]
+trunc_4: pooled-law var ratio median 0.291 [0.080,0.630]; per-channel-law 0.317 [0.083,0.760]
+trunc_6_sparsity: pooled-law var ratio median 1.001 [0.985,1.009]; per-channel-law 1.001 [0.985,1.009]
+trunc_6: pooled-law var ratio median 0.254 [0.071,0.593]; per-channel-law 0.264 [0.072,0.615]
+round_5_sparsity: pooled-law var ratio median 0.994 [0.968,1.003]; per-channel-law 0.994 [0.968,1.003]
+round_5: pooled-law var ratio median 0.942 [0.803,0.978]; per-channel-law 0.960 [0.812,0.998]

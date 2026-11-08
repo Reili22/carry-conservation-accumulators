@@ -1,0 +1,5 @@
+In an accumulator, a lower-part approximate adder's error is decided by its carries.
+State-blind carries make an approximate adder equal to a quantized-operand sum.
+Under uniform residues a low part buys at most its state's entropy rate in accuracy.
+1440 netlists proved equal to quantizer twins; routed median penalty 9–19%.
+Protocol-fixed CIFAR-100 replication: rounded-product sums stay cheapest.

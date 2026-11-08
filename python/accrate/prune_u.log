@@ -1,0 +1,5 @@
+720 mapped netlists of 40 state-blind designs; pruned twin verified: 720; twin worse on some axis: 0
+  area: median saving 8.8%, min -0.0%, max 29.4%
+  energy: median saving 7.0%, min 0.0%, max 25.7%
+  delay: median saving 0.0%, min 0.0%, max 0.3%
+formal twin equivalence: 720 proved, 0 failed, 0 without a round/trunc twin RTL
